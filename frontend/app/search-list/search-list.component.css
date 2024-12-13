@@ -1,0 +1,40 @@
+.pagination-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+
+  .horizontal-list {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante s'il n'y a plus d'espace */
+    gap: 10px; /* Espace entre les éléments */
+    list-style-type: none; /* Supprime les puces des <li> */
+    padding: 0; /* Supprime les marges internes du <ul> */
+    margin: 0; /* Supprime les marges externes du <ul> */
+  }
+  
+  .horizontal-list li {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1 1 calc(25% - 10px); /* Ajuste chaque élément à 25% de la largeur disponible, moins l'espace */
+    box-sizing: border-box; /* Inclut les bordures et marges dans le calcul de largeur */
+    text-align: center;
+  }
+  

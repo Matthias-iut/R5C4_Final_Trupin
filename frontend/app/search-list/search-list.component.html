@@ -1,0 +1,24 @@
+<h2>Liste des données sur les searches</h2>
+
+<button (click)="onPrevious()" [disabled]="!canGoPrevious()">Précédent</button>
+<button (click)="onNext()" [disabled]="!canGoNext()">Suivant</button>
+
+
+<ul class="horizontal-list">
+  @for (s of shownData; track $index){
+    <li>
+      <b>User id</b> : {{s.id}} - Société n° : {{s.id}} 
+      <b>algorithm </b> : {{ s.algorithm }}
+      <b>grid_width </b> : {{ s.grid_width }}
+      <b>grid_height </b> : {{ s.grid_height }}
+      <b>move_type </b> : {{ s.move_type }}
+      <b>start </b> : {{ s.start }}
+      <b>end </b> : {{ s.end }}
+      <b>path_lenghth </b> : {{ s.path_length }}
+      <b>visited_nodes </b> : {{ s.visited_nodes }}
+      <b>time_ns </b> : {{ s.time_ns }}
+      <br> 
+  </li>
+  }
+  
+</ul>
