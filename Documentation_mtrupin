@@ -1,0 +1,10 @@
+Documentation technique : 
+
+
+Pour utiliser l'application il faut : 
+
+Lancer l'API Flask en se déplacant sur le dossier "backend" avec la commande : "cd backend". Puis en exécutant la commande "flask run".
+
+Dans un deuxième temps, ouvrir un deuxième terminal et se déplacer sur le dossier "frontend" avec la commande : "cd ../frontend". Puis en exécutant les commandes "npm install" puis la commande "npm start".
+
+L'application est maintenant prête à être utilisée. Bonne navigation.
